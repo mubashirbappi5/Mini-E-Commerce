@@ -80,7 +80,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
               <Button
                 onClick={handleAddToCart}
-                className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                className="w-full bg-black hover:opacity-90 transition-opacity"
                 size="sm"
               >
                 <ShoppingCart className="h-4 w-4 mr-2" />

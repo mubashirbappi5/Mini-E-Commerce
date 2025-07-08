@@ -3,6 +3,7 @@ import { X, Minus, Plus, Trash2, ShoppingBag } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 import CheckoutModal from "./CheckoutModal";
+import { Button } from "./ui/button";
 
 const CartSidebar = () => {
   const { state, removeFromCart, updateQuantity, closeCart } = useCart();
@@ -123,12 +124,12 @@ const CartSidebar = () => {
 
             
 
-              <button
+              <Button
                 onClick={handleCheckout}
-                className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                className="w-full bg-black hover:opacity-90 transition-opacity"
               >
                 Proceed to Checkout
-              </button>
+              </Button>
             </div>
           )}
         </div>

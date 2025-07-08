@@ -245,7 +245,7 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose }) => {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+            className="w-full bg-black hover:opacity-90 transition-opacity"
             size="lg"
             disabled={!isFormValid || isProcessing}
           >
