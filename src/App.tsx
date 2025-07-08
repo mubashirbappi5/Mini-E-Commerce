@@ -1,29 +1,37 @@
-import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
+import { TooltipProvider } from "./components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+import { CartProvider } from "./context/CartContext";
 import Navbar from "./components/Navbar";
 import CartSidebar from "./components/CartSidebar";
+import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
 
-import { useState } from "react"
-import Footer from "./components/Footer";
+// Import only your custom Sonner Toaster (recommended)
+import { Toaster as SonnerToaster } from "./components/ui/sonner";
+import { Routes, Route } from "react-router-dom";
 
+const queryClient = new QueryClient();
 
-function App() {
-   const [cartOpen, setCartOpen] = useState(false)
-  return (
-    <div>
-      <Navbar onCartClick={() => setCartOpen(true)} />
-         <Routes>
-           
-      <Route path="/" element={<Home />} />
-      {/* Add more routes here */}
-    
-    </Routes>
-      <CartSidebar isOpen={cartOpen} onClose={() => setCartOpen(false)} />
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <CartProvider>
+        <SonnerToaster />
 
-        <Footer/>
-    </div>
-   
-  );
-}
+        {/* Remove BrowserRouter here! */}
+        <div className="min-h-screen bg-background">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
+          </Routes>
+          <CartSidebar />
+        </div>
+      </CartProvider>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;
