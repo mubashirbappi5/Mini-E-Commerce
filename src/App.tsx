@@ -1,20 +1,28 @@
 import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Navbar from "./components/Navbar";
+import CartSidebar from "./components/CartSidebar";
 
-function Home() {
-  return <h1 className="text-3xl text-amber-300 font-bold">Welcome to the Mini E-Commerce App</h1>;
-}
+import { useState } from "react"
+import Footer from "./components/Footer";
 
-function NotFound() {
-  return <h2>404 - Page Not Found</h2>;
-}
 
 function App() {
+   const [cartOpen, setCartOpen] = useState(false)
   return (
-    <Routes>
+    <div>
+      <Navbar onCartClick={() => setCartOpen(true)} />
+         <Routes>
+           
       <Route path="/" element={<Home />} />
       {/* Add more routes here */}
-      <Route path="*" element={<NotFound />} />
+    
     </Routes>
+      <CartSidebar isOpen={cartOpen} onClose={() => setCartOpen(false)} />
+
+        <Footer/>
+    </div>
+   
   );
 }
 
