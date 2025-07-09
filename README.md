@@ -2,6 +2,9 @@
 
 A modern, responsive single-page e-commerce web application built with React.js. Users can browse products, view detailed info, add to cart, and simulate a checkout — all without authentication.
 
+## 🚀 Live Demo
+
+🔗 [Live Site on Vercel](https://your-deployment-link.vercel.app)
 
 ## 📦 Tech Stack
 
