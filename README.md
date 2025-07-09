@@ -1,3 +1,58 @@
+# 🛍️ Mini E-Commerce SPA
+
+A modern, responsive single-page e-commerce web application built with React.js. Users can browse products, view detailed info, add to cart, and simulate a checkout — all without authentication.
+
+## 🚀 Live Demo
+
+🔗 [Live Site on Vercel](https://your-deployment-link.vercel.app)
+
+## 📦 Tech Stack
+
+- ⚛️ React.js TypeScript
+- 📦 React Router DOM
+- 🎨 Tailwind CSS
+- 🛒 Context API (Cart State)
+- 🗃️ Dummy Product Data (local JSON)
+- 🌍 Vercel for Deployment
+
+## ✨ Features
+
+- SPA architecture using React Router
+- Product listing with image, title, price, and add-to-cart
+- Product detail page with full product info
+- Slide-in cart sidebar with:
+  - Quantity control
+  - Total calculation
+  - Checkout button
+- Modal checkout form (Name, Email, Address)
+- Responsive design for mobile and desktop
+
+
+
+
+
+
+
+
+## 🛠️ Getting Started
+
+### ✅ Prerequisites
+
+- Node.js and npm installed
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/mubashirbappi5/Mini-E-Commerce.git
+cd Mini-E-Commerce
+npm install
+npm run dev
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
