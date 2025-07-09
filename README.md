@@ -4,7 +4,7 @@ A modern, responsive single-page e-commerce web application built with React.js.
 
 ## 🚀 Live Demo
 
-🔗 [Live Site on Vercel](https://your-deployment-link.vercel.app)
+🔗 [Live Site on Netlify](https://luxury-palmier-0fde02.netlify.app/)
 
 ## 📦 Tech Stack
 
@@ -13,7 +13,7 @@ A modern, responsive single-page e-commerce web application built with React.js.
 - 🎨 Tailwind CSS
 - 🛒 Context API (Cart State)
 - 🗃️ Dummy Product Data (local JSON)
-- 🌍 Vercel for Deployment
+- 🌍 Netlify for Deployment
 
 ## ✨ Features
 
