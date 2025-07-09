@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ShoppingCart, Eye } from "lucide-react";
 import type { Product } from "../context/CartContext";
 import { useCart } from "../context/CartContext";
