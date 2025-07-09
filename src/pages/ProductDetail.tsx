@@ -13,6 +13,7 @@ import { useCart } from "../context/CartContext";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { Separator } from "../components/ui/separator";
+import { toast } from "react-hot-toast";
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -40,7 +41,7 @@ const ProductDetail = () => {
 
   const handleAddToCart = () => {
     addToCart(product);
-    window.alert(`${product.title} has been added to your cart.`);
+    toast.success(`${product.title} has been added to your cart.`);
   };
 
   return (

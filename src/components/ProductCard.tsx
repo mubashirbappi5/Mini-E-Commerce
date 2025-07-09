@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 
 import { Link } from "react-router-dom"; // Added import
+import toast from "react-hot-toast";
 
 interface ProductCardProps {
   product: Product;
@@ -19,10 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     e.preventDefault();
     e.stopPropagation();
     addToCart(product);
-    alert({
-      title: "Added to cart",
-      description: `${product.title} has been added to your cart.`, // Fixed template string
-    });
+    toast.success(`${product.title} has been added to your cart.`);
   };
 
   return (

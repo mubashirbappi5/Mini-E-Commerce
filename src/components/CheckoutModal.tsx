@@ -6,6 +6,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { Separator } from './ui/separator';
+import { toast } from 'react-hot-toast';
 
 
 interface CheckoutModalProps {
@@ -56,10 +57,7 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose }) => {
     // Simulate payment processing
     await new Promise(resolve => setTimeout(resolve, 2000));
 
-    alert({
-      title: "Order placed successfully!",
-      description: `Your order for $${state.total.toFixed(2)} has been confirmed.`,
-    });
+    toast.success("Order placed successfully!")
 
     clearCart();
     setIsProcessing(false);

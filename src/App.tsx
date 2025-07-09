@@ -10,7 +10,7 @@ import ProductDetail from "./pages/ProductDetail";
 // Import only your custom Sonner Toaster (recommended)
 import { Toaster as SonnerToaster } from "./components/ui/sonner";
 import { Routes, Route } from "react-router-dom";
-
+import { Toaster } from 'react-hot-toast';
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +29,7 @@ const App = () => (
           </Routes>
           <CartSidebar />
         </div>
+          <Toaster />
       </CartProvider>
     </TooltipProvider>
   </QueryClientProvider>
