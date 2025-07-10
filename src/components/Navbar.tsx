@@ -1,8 +1,8 @@
 
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCart, Home, Store } from 'lucide-react';
+import { ShoppingCart, Home } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-
+import logo from '../../public/logo.png'; // Adjust the path as necessary
 
 const Navbar = () => {
   const { state, toggleCart } = useCart();
@@ -15,8 +15,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <Store className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">ShopEase</span>
+           
+            <span className="text-2xl font-bold text-foreground"><img className='w-40 h-10' src={logo} alt="" /></span>
           </Link>
 
           <div className='flex items-center space-x-10'>
@@ -36,12 +36,12 @@ const Navbar = () => {
         
            
             onClick={toggleCart}
-            className="relative flex bg-black text-white py-2 rounded-lg px-4 items-center space-x-2 hover:bg-cart hover:text-cart-foreground transition-colors"
+            className="relative flex bg-purple-500 text-white py-2 rounded-lg px-6 items-center space-x-2 hover:bg-cart hover:text-cart-foreground transition-colors"
           >
             <ShoppingCart className="h-4 w-4" />
             <span className="hidden sm:inline">Cart</span>
             {cartItemsCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-white text-black text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse-cart">
+              <span className="absolute -top-2 -right-2 bg-sky-400 text-white font-bold text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse-cart">
                 {cartItemsCount}
               </span>
             )}

@@ -24,11 +24,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   return (
-    <Card className="group h-full bg-gradient-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+    <Card className="group h-full border-t-2  border-purple-500 hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
       <Link to={`/product/${product.id}`} className="block h-full">
         <CardContent className="p-0 h-full flex flex-col">
           {/* Product Image */}
-          <div className="relative overflow-hidden rounded-t-lg aspect-square">
+          <div className="relative overflow-hidden  aspect-square">
             <img
               src={product.image}
               alt={product.title}
@@ -45,7 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 tabIndex={-1}
                 onClick={(e) => {
                   e.preventDefault();
-                  e.stopPropagation(); /* Add quick view logic here */
+                  e.stopPropagation(); 
                 }}
                 aria-label="Quick View"
               >
@@ -78,7 +78,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
               <Button
                 onClick={handleAddToCart}
-                className="w-full bg-black hover:opacity-90 transition-opacity"
+                className="w-full bg-purple-600 hover:opacity-90 transition-opacity"
                 size="sm"
               >
                 <ShoppingCart className="h-4 w-4 mr-2" />

@@ -3,66 +3,66 @@ import type { Product } from '../context/CartContext';
 export const products: Product[] = [
   {
     id: 1,
-    title: "Wireless Bluetooth Headphones",
-    price: 79.99,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
-    description: "Premium wireless headphones with noise cancellation, 30-hour battery life, and crystal-clear audio quality. Perfect for music lovers and professionals.",
+    title: "Rythflo WH01 Neckband Bluetooth Headphones",
+    price: 39.99,
+    image: "https://i.ibb.co/bgLvRDMX/download-24.jpg",
+    description: "Neckband-style wireless headphones with Bluetooth 5.2, IPX7 water resistance, 30‑hour battery, and deep bass.",
     category: "Electronics"
   },
   {
     id: 2,
-    title: "Smart Fitness Watch",
-    price: 199.99,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
-    description: "Advanced fitness tracking with heart rate monitor, GPS, sleep tracking, and 7-day battery life. Compatible with iOS and Android.",
-    category: "Wearables"
-  },
-  {
-    id: 3,
-    title: "Minimalist Leather Wallet",
-    price: 49.99,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop",
-    description: "Handcrafted genuine leather wallet with RFID blocking technology. Slim design holds up to 8 cards and cash securely.",
-    category: "Accessories"
-  },
-  {
-    id: 4,
-    title: "Portable Coffee Maker",
-    price: 89.99,
-    image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop",
-    description: "Compact espresso maker for home, office, or travel. Makes barista-quality coffee in under 2 minutes. Battery powered and easy to clean.",
-    category: "Appliances"
-  },
-  {
-    id: 5,
-    title: "Organic Cotton T-Shirt",
-    price: 29.99,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
-    description: "100% organic cotton t-shirt with a comfortable fit. Sustainable fashion that's soft, breathable, and perfect for everyday wear.",
-    category: "Clothing"
-  },
-  {
-    id: 6,
-    title: "Wireless Charging Pad",
-    price: 39.99,
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=400&fit=crop",
-    description: "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator and overheating protection.",
+    title: "Sony WH-CH720N Wireless Noise-Canceling Headphones",
+    price: 149.99,
+    image: "https://i.ibb.co/7xDycWY5/download-25.jpg",
+    description: "Over-ear Sony Bluetooth 5.3 headphones featuring active noise cancellation, 32‑hour battery, LDAC support.",
     category: "Electronics"
   },
   {
+    id: 3,
+    title: "Bose QuietComfort Ultra Bluetooth Headphones",
+    price: 349.99,
+    image: "https://i.ibb.co/PZMg0MR7/download-26.jpg",
+    description: "Premium over-ear Bluetooth headphones with top-tier ANC, spatial audio, up to 29‑hour battery life :contentReference[oaicite:2]{index=2}.",
+    category: "Electronics"
+  },
+  {
+    id: 4,
+    title: "Cowin SE7 ANC Wireless Headphones",
+    price: 119.99,
+    image: "https://i.ibb.co/YBz8QCD9/download-27.jpg",
+    description: "Over-ear Cowin headphones with dual ANC, 60‑hour battery, USB‑C charging, aptX/AAC support.",
+    category: "Electronics"
+  },
+  {
+    id: 5,
+    title: "Samsung Galaxy Buds Core Earbuds",
+    price: 189.00,
+    image: "https://i.ibb.co/93y2Ybj4/download-28.jpg",
+    description: "In-ear true wireless earbuds featuring ANC, Bluetooth 5.4, AI-enhanced translation, 35h battery :contentReference[oaicite:3]{index=3}.",
+    category: "Wearables"
+  },
+  {
+    id: 6,
+    title: "Apple AirPods Max (USB‑C)",
+    price: 549.00,
+    image: "https://i.ibb.co/pv694f0P/download-29.jpg",
+    description: "High‑end over‑ear Apple headphones with ANC, spatial audio, Digital Crown, up to 20h battery :contentReference[oaicite:4]{index=4}.",
+    category: "Wearables"
+  },
+  {
     id: 7,
-    title: "Bamboo Phone Stand",
-    price: 24.99,
-    image: "https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?w=400&h=400&fit=crop",
-    description: "Eco-friendly bamboo phone stand with adjustable angles. Perfect for video calls, watching content, and hands-free phone use.",
-    category: "Accessories"
+    title: "AeroPress Go Travel Coffee Press",
+    price: 39.95,
+    image: "https://i.ibb.co/tMtxWX6j/download-30.jpg",
+    description: "Compact manual coffee press for travel — makes smooth espresso-style coffee, easy to clean :contentReference[oaicite:5]{index=5}.",
+    category: "Appliances"
   },
   {
     id: 8,
-    title: "Stainless Steel Water Bottle",
-    price: 34.99,
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop",
-    description: "Double-wall insulated stainless steel bottle that keeps drinks cold for 24 hours or hot for 12 hours. BPA-free and leak-proof design.",
-    category: "Lifestyle"
+    title: "Wacaco Picopresso Portable Espresso Maker",
+    price: 79.99,
+    image: "https://i.ibb.co/hRtLcXKX/download-31.jpg",
+    description: "Tiny, lightweight manual espresso maker with 18 g dosage — excellent travel companion :contentReference[oaicite:6]{index=6}.",
+    category: "Appliances"
   }
 ];

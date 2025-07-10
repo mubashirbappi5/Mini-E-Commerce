@@ -66,7 +66,7 @@ const ProductDetail = () => {
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full border-l-4 border-purple-300 object-cover"
               />
             </div>
           </div>
@@ -74,7 +74,7 @@ const ProductDetail = () => {
           {/* Product Info */}
           <div className="space-y-6">
             <div>
-              <Badge variant="secondary" className="mb-3">
+              <Badge variant="secondary" className="mb-3 text-purple-400">
                 {product.category}
               </Badge>
               <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -114,7 +114,7 @@ const ProductDetail = () => {
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <Truck className="h-5 w-5 text-primary" />
+                <Truck className="h-5 w-5 text-purple-400" />
                 <div>
                   <p className="font-medium text-foreground text-sm">
                     Free Shipping
@@ -126,7 +126,7 @@ const ProductDetail = () => {
               </div>
 
               <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <Shield className="h-5 w-5 text-primary" />
+                <Shield className="h-5 w-5 text-purple-400" />
                 <div>
                   <p className="font-medium text-foreground text-sm">
                     Warranty
@@ -138,7 +138,7 @@ const ProductDetail = () => {
               </div>
 
               <div className="flex items-center space-x-3 p-3 bg-secondary/50 rounded-lg">
-                <RotateCcw className="h-5 w-5 text-primary" />
+                <RotateCcw className="h-5 w-5 text-purple-400" />
                 <div>
                   <p className="font-medium text-foreground text-sm">
                     Easy Returns
@@ -155,7 +155,7 @@ const ProductDetail = () => {
               <Button
                 onClick={handleAddToCart}
                 size="lg"
-                className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
+                className="w-full bg-purple-600 hover:opacity-90 transition-opacity"
               >
                 <ShoppingCart className="h-5 w-5 mr-2" />
                 Add to Cart - ${product.price.toFixed(2)}
